@@ -1,0 +1,1 @@
+1. 'needs: ["run-shell-cmd"]'  - this will run only after shellcmd runs
