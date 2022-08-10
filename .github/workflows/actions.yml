@@ -12,9 +12,4 @@ jobs:
             pwd
             ls -la
         id: greet
-        #uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: 'Varun'
 
-      - name: log Greet Time
-        run: echo "${{ steps.greet.outputs.time }}"
