@@ -1,3 +1,7 @@
-1. needs: ["run-shell-cmd"] - this will run only after shellcmd runs
-2. uses: actions/checkout@v1 - lets you navigate into the  branch mentioned.
-3. 
+1. needs: ["run-shell-cmd"] >> this will run only after shellcmd runs
+2. uses: actions/checkout@v1 >> lets you navigate into the  branch mentioned.
+3. on:
+     push:
+     pull_request:
+       types: [closed, assgined, opened, reopened]
+        >> pull_request will execuite at mentioned cases.
