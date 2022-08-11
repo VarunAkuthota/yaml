@@ -5,19 +5,12 @@ on: [push]
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
-
     steps:
       - name: Simple JS Action
-        run: |
-            pwd
-            ls -la
         id: greet
-<<<<<<< HEAD
-        uses: actions/checkout@v1
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: 'Varun'
+
       - name: log Greet Time
         run: echo "${{ steps.greet.outputs.time }}"
-=======
-
->>>>>>> dc1919c73b48a91b1b7ee2c39127bdc6bef0c94b
